@@ -1,0 +1,177 @@
+.window { 
+    
+}
+
+.window:hover{ 
+    cursor: pointer;
+}
+
+.component { 
+  ##border:1px solid #346789; 
+  border-radius:0.5em;        
+  opacity:0.8; 
+  filter:alpha(opacity=80);
+  color:black;
+  padding:0.5em;   
+  font-size:0.8em;
+}
+
+.component:hover {
+    border:1px solid #123456;
+    background-color:white;
+    box-shadow: 2px 2px 19px #444;
+   -o-box-shadow: 2px 2px 19px #444;
+   -webkit-box-shadow: 2px 2px 19px #444;
+   -moz-box-shadow: 2px 2px 19px #fff;
+    opacity:0.9;
+    color:black;
+    filter:alpha(opacity=90);
+}
+
+.menu { 
+    background-color: #EFEFEF;
+    border: 1px solid #346789;
+    box-shadow: 2px 2px 5px #AAAAAA;
+    color: black;
+    min-height: 3em;
+    position: absolute;
+    min-width: 5em;
+}
+
+.task { 
+    border:1px solid #346789;
+    box-shadow: 2px 2px 19px #aaa;
+    -o-box-shadow: 2px 2px 19px #aaa;
+    -webkit-box-shadow: 2px 2px 19px #aaa;
+    -moz-box-shadow: 2px 2px 19px #aaa;
+    -moz-border-radius:0.5em;
+    border-radius:0.5em;
+    opacity:0.8;
+    filter:alpha(opacity=80);
+    width: 108px; 
+    height: 40px;
+    line-height: 1.5em;
+    text-align:center;
+    position:absolute;
+    background-color:#eeeeef;
+    color:black;
+    font-family:helvetica;
+    padding: 5px;
+    font-size:0.9em;
+}
+
+.point{ 
+    background-color: #333333;
+    border: 1px solid #346789;
+    border-radius: 8%;
+    box-shadow: 2px 2px 5px #AAAAAA;
+    color: white;
+    min-width: 48px;
+    min-height: 30px;
+    font-size:11pt;
+    padding:5px;
+    position: absolute;
+    text-align: center;
+}
+
+.point:hover { 
+    box-shadow: 2px 2px 19px #AAAAAA;
+}
+
+.button {
+    text-align: center;
+    border: 1px solid;
+    margin: 5px;
+}
+
+.button:hover {
+    cursor: pointer;
+}
+
+.menu_button{
+    padding:5px;
+}
+
+.menu_button:hover{
+    background-color:#AAAAAA;
+    color:black;
+}
+
+.button_add{
+    background-color: #00CC00;
+    float:left;
+    border-radius: 50%;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+    padding:2px;
+    height:25px;
+    width:25px;
+    color:grey;
+}
+
+.button_add:hover{
+    background-color: #00AA00;
+    color:black;
+}
+
+.button_remove{
+    font-size:9pt;
+    color:darkgrey;
+    border-radius: 30%;
+    box-shadow: 0px 3px 8px #aaa, inset 0px 2px 3px #fff;
+    padding:5px;
+    min-width:8px;
+    max-width:12px;
+    text-align:center;
+}
+
+.task .button_remove{
+    float:right;
+}
+
+.decision .button_remove{
+    margin: auto auto;
+}
+
+.button_remove:hover{
+    background-color: darkred;
+    color:white;
+}
+
+.menu_button_container {
+    margin: 1px;
+}
+
+.ctrl_container{
+    margin:2px;
+    height:10px;
+}
+
+.details_container{
+    margin:2px;
+    min-height:20px;
+}
+
+.detail_label{
+    font-size: 9pt;
+    color:grey;
+}
+
+.detail_text{
+	text-align:center;
+	display: block;
+    width: 108px;
+    font-size: 10pt;
+}
+
+._jsPlumb_connector, ._jsPlumb_startpoint, ._jsPlumb_endpoint, .endpointTargetLabel, .endpointSourceLabel{
+    cursor: pointer;
+}
+
+#drawingArea {
+            padding: 21px;
+            width:80%; height: 199px;
+            border: 1px solid gray;
+            background-image: url(../images/grid.png);
+            background-repeat:repeat;
+}
+

@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>flowchart</title>
+<link rel="stylesheet" href="common/css/flowchart.css">
+
+
+<script src="http://cdn.bootcss.com/jquery/3.1.0/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+<script src="http://cdn.bootcss.com/jsPlumb/2.0.7/jsPlumb.min.js"></script>
+<script src="http://cdn.bootcss.com/jsPlumb/1.4.1/jquery.jsPlumb-1.4.1-all.js"></script>
+
+
+
+<!--  demo code -->
+<script src="common/js/flowchart.js"></script>
+</head>
+<body>
+	<div id="drawingArea" style="width: 100%; min-height: 500px;">
+		<div id="rubberband" style="border: 1px solid green; display: none;"></div>
+		<div class="startpoint point window node" style="left: 150px; top: 20px; background-color: green" data-nodetype="startpoint" id="startpoint">Start</div>
+
+		<div class="window menu" style="left: 600px" id="menuContainer">
+			<p style="text-align: center">Menu</p>
+			<div class="menu_button_container">
+				<div class="button_add_task button menu_button">Add Task</div>
+				<button id="saveButton" class="button menu_button">Save FlowChart</button>
+				<button id="loadButton" class="button menu_button">Load FlowChart</button>
+			</div>
+		</div>
+
+
+		<div class="endpoint point window node" style="left: 150px; top: 350px" data-nodetype="endpoint" id="endpoint">End</div>
+		<textarea id="jsonOutput" style="position: absolute;width:100%;height:100px;top:700px"></textarea>
+	</div>
+	
+</body>
+</html>
